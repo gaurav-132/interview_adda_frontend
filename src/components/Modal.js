@@ -37,7 +37,7 @@ const Modal = ({ isOpen, onClose, title, children, size = "md" }) => {
                 exit={{ opacity: 0 }}
             >
                 <motion.div
-                    className={`bg-white p-6 rounded-lg shadow-lg ${sizeClasses[size]}`}
+                    className={` p-6 rounded-lg ${sizeClasses[size]}`}
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     exit={{ scale: 0.8, opacity: 0 }}
@@ -45,17 +45,9 @@ const Modal = ({ isOpen, onClose, title, children, size = "md" }) => {
                 >
                     <div className="flex justify-between items-center mb-4 py-2 px-4">
                         <h2 className="text-xl font-bold">{title}</h2>
-                        <button className="text-gray-500 hover:text-red-500" onClick={onClose}>
-                            ✖
-                        </button>
                     </div>
-
-                    <div>{children}</div>
-
-                    <div className="mt-4 text-right">
-                        <button className="bg-gray-400 text-white px-4 py-2 rounded" onClick={onClose}>
-                            Close
-                        </button>
+                    <div> 
+                        {children}
                     </div>
                 </motion.div>
             </motion.div>
