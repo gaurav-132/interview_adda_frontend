@@ -71,7 +71,7 @@ const SignupModal = () => {
             </div>
 
             <p className="text-gray-500 text-sm mt-3">
-               Already Have An Account? <a href="#" className="text-blue-500">Login</a>
+               Already Have An Account? <a href="#" style={{color:'#6F63F6'}}>Login</a>
             </p>
         </div>
       </div>

@@ -53,7 +53,7 @@ const LoginModal = () => {
             </div>
 
             <p className="text-gray-500 text-sm mt-3">
-               Don't Have An Account? <a href="#" className="text-blue-500">Signup</a>
+               Don't Have An Account? <a href="#" style={{color:'#6F63F6'}}>Signup</a>
             </p>
         </div>
       </div>
