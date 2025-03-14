@@ -107,7 +107,7 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 bg-white gap-10">
+      <section className="h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 bg-white gap-10  mt-12 md:mt-0">
         {/* Left Content */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6 mb-10 md:mb-0">
           <h2 className="text-5xl font-bold text-gray-900 leading-tight">
@@ -122,8 +122,12 @@ export default function LandingPage() {
         </div>
 
         {/* Right Image */}
-        <div className="w-full md:w-1/2 flex justify-center">
-          <img src="/images/cover.jpg" alt="Interview Preparation" className="max-w-xs sm:max-w-sm md:max-w-full h-auto" />
+        <div className="w-full md:w-1/2 flex justify-center relative">
+          <img
+            src="/images/cover.jpg"
+            alt="Interview Preparation"
+            className="max-w-md sm:max-w-md md:max-w-sl lg:max-w-xl xl:max-w-2xl h-auto transform -translate-y-40 md:-translate-y-10"
+          />
         </div>
       </section>
 
@@ -146,11 +150,18 @@ export default function LandingPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="text-center py-25">
-        <h2 className="text-3xl font-bold">Start Your Journey Today!</h2>
-        <p className="mt-4 text-gray-600">Sign up now for exclusive early access to InterviewAdda and unlock your potential with tailored interview preparation resources.</p>
-        <button className="mt-6 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700">Join Now</button>
+      <section className="text-center py-30 px-6">
+        <div className="bg-indigo-100 bg-opacity-20 p-8 rounded-lg max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold">Start Your Journey Today!</h2>
+          <p className="mt-4 text-gray-600">
+            Sign up now for exclusive early access to InterviewAdda and unlock your potential with tailored interview preparation resources.
+          </p>
+          <button className="mt-6 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700">
+            Join Now
+          </button>
+        </div>
       </section>
+
 
       {/* Testimonial Section */}
         <section className="text-center py-10">
@@ -180,7 +191,7 @@ export default function LandingPage() {
       <footer className="bg-gray-900 text-white py-10 mt-20">
         <div className="container mx-auto px-6 md:px-20">
           {/* Footer Links */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left  ">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6  md:ml-32 sm:ml-0 text-center md:text-left  ">
             <div>
               <h3 className="text-lg font-bold text-white">Product</h3>
               <ul className="mt-2 space-y-2 text-gray-400">
