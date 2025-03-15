@@ -58,7 +58,7 @@ export default function LandingPage() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex flex-1 justify-center space-x-6">
-          <a href="#" className="hover:text-indigo-600">The Interview Vault</a>
+          <a href="/interview-vault" className="hover:text-indigo-600">The Interview Vault</a>
           <a href="#" className="hover:text-indigo-600">Resume Generator</a>
           <a href="#" className="hover:text-indigo-600">Roadmap</a>
           <a href="#" className="hover:text-indigo-600">Mock Interview</a>
